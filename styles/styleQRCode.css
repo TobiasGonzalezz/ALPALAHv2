@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Nunito+Sans:ital,wght@1,400;1,600&family=Space+Mono:ital,wght@1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@1&display=swap');
 :root {
-    --background: #92594e49;
+    /* --background: #92594e49; */
+    --background-text: #11151c;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Tiro Devanagari Marathi', serif;
     background: url(../images/backgroundQR.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -16,15 +17,6 @@
     background-size: cover;
 }
 
-#pointer{
-    background: none;
-    position: absolute;
-    bottom: 70px;
-    right: 240px;
-    width: 250px;
-    height: 250px;
-    z-index: 1;
-}
 
 .container{
     display: flex;
@@ -45,17 +37,33 @@
 
 .blackBlocktitle {
     background: none;
+    text-shadow: 10px 10px var(--background-text);
+    letter-spacing: 10px;
 }
 
 .blackBlockelements {
     display: flex;
     justify-content: center;
     background: none;
+    text-shadow: 4px 4px var(--background-text);
 }
 
-.elementstext, .elementsqr {
-    margin: 0 20px;
+.elementsqr {
+    margin-left: 15px;
+    margin-right: 10px;
     background: none;
+}
+
+.elementstext__arrow{
+    margin: none;
+    font-size: 50px;
+    text-shadow: 3px 3px var(--background-text);
+}
+
+.arrowQr{
+    background: none;
+    transform: rotate(-10deg);
+    margin-right: 90px ;
 }
 
 .elementsqr:hover {
@@ -65,11 +73,6 @@
 
 .elementsqr a {
     background: none;
-}
-
-.containerghostBox {
-    height: 5vh;
-    width: 100%;
 }
 
 .left__bottom .fa-brands {
