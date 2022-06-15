@@ -37,7 +37,7 @@
 
 .blackBlocktitle {
     background: none;
-    text-shadow: 10px 10px var(--background-text);
+    text-shadow: 7px 7px var(--background-text);
     letter-spacing: 10px;
 }
 
