@@ -195,9 +195,7 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: center;
 }
 
-/* aca cambiar el wrokwhitus por otro */
-
-.title__workWhitUs {
+.title {
     background: none;
     font-size: 30px;
     text-align: center;
@@ -230,12 +228,10 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: center;
     align-items: center;
     background: none;
-    /* border del circulo */
     border-top: 5px solid var(--border-spinner);
     border-right: 5px solid var(--border-spinner-off);
     border-bottom: 5px solid var(--border-spinner);
     border-left: 5px solid var(--border-spinner-off);
-    /* animation */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 15s;
@@ -322,9 +318,6 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 150px;
     background: none;
     color: white;
-    /* font-family: 'Space Mono', monospace;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Nunito Sans', sans-serif; */
     font-family: 'Tiro Devanagari Marathi', serif;
     letter-spacing: 15px;
     text-shadow: 5px 5px var(--background);
@@ -406,7 +399,7 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 10px;
 }
 
-.price{
+.container__price{
     background: none;
     display: flex;
     justify-content: space-around;
@@ -418,14 +411,13 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 25px;
 }
 
-.container__h4__name{
+.price__details{
     flex: 9;
     background: none;
     font-size: 20px;
 }
 
-
-.container__h3__price{
+.price__number{
     flex: 1;
     font-size: 20px;
     background: none
