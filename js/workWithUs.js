@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const email = myForm.querySelector('#email');
     const personalDescription = myForm.querySelector('#personalDescription');
     const submitButton = myForm.querySelector('#submit');
-    const applicants = [];
 
     genre.forEach((radio) => {
         radio.addEventListener('click', (event) => {
@@ -17,8 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     submitButton.addEventListener('click', (event) => {
-
-        event.preventDefault();
 
         const applicant = {
             fullName: inputName.value,

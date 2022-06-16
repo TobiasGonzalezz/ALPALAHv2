@@ -5,8 +5,6 @@ document.getElementById("chevron").addEventListener("click", scrollUp => {
     }
 });
 
-chevron = document.getElementById("chevron");
-
 window.onscroll = function() {
 
     let scroll = document.documentElement.scrollTop;
