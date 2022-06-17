@@ -1,10 +1,4 @@
 # :cocktail: Alpalah
 Web Project. Global Learning.
 
-Students: Ezequiel Morales, Tobias Gonzales
-
-<p align="center">
-  <img src="images/presentation.png?raw=true" />
-</p>
-
->*:pushpin: *Software for bars and restaurants. Online menu simulation, cost calculation.**
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bb89ee87-0db4-41d6-ac8e-e3e422d1e96b/deploy-status)](https://app.netlify.com/sites/alpalah/deploys)
