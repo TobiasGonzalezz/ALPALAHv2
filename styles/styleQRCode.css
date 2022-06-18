@@ -49,6 +49,7 @@
 }
 
 .elements__text{
+    background: none;
     margin-left: 20px;
     margin-top: 15px;
     font-size: 5vw;
@@ -58,10 +59,11 @@
 .elements__qr {
     justify-content: center;
     margin: 1vw 2vw;
-    background: none
+    background: none;
 }
 
 .elements__textArrow{
+    background: none;
     margin-right: 20px;
     margin-top: 20px;
     font-size: 5vw;
@@ -98,6 +100,7 @@
     }
     .container__elements{
         flex-direction: column;
+        background: none;
     }
     .elements__qr {
         background: none;
@@ -107,6 +110,7 @@
     }
 
     .elements__text{
+        background: none;
         margin: auto;
         font-size: 6.8vw;
         text-shadow: 3px 3px var(--background-text);
@@ -114,6 +118,7 @@
         height: 100%;
     }
     .elements__textMobile{
+        background: none;
         display:block !important;
         margin: auto;
         font-size: 6.8vw;

@@ -25,7 +25,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-    background: url(../images/backgroundBar.jpg) no-repeat center center fixed;
+    background: url('../images/backgroundBar.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -423,9 +423,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .price__number{
+    margin: auto;
     flex: 1;
     font-size: 20px;
     background: none;
+
 }
 
 
