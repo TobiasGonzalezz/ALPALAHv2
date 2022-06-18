@@ -74,6 +74,11 @@ a:visited {
 
 /* -------------------------------------------- [container] -------------------------------------------- */
 
+.containerMaster{
+    max-width: 1400px;
+    margin: auto;
+}
+
 .container {
     position: relative;
     width: 90vw;
@@ -83,6 +88,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    border-radius: 20px ;
 }
 
 /* -------------------------------------------- [scroll] -------------------------------------------- */
@@ -111,8 +117,10 @@ body::-webkit-scrollbar-thumb:hover {
 /* -------------------------------------------- [navbar] -------------------------------------------- */
 
 .navbar {
+    max-width: 1400px;
+    margin: auto;
     position: fixed;
-    width: 100%;
+    min-width: 100%;
     background: none;
     z-index: 1;
 }
@@ -124,8 +132,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navbar__menu {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     background: rgba(0, 0, 0, 0.575);
+    width: 100vw;
 }
 
 .navbar__button {
@@ -136,6 +145,7 @@ body::-webkit-scrollbar-thumb:hover {
     border: none;
     width: 160px;
     height: 50px;
+    padding: 5px 5px;
     background: none;
     color: var(--button);
     font-family: 'Space Mono', monospace;
@@ -312,13 +322,12 @@ body::-webkit-scrollbar-thumb:hover {
     height: 0;
     border-right: 30px solid transparent;
     border-bottom: 15px solid var(--martini);
-    ;
     border-left: 30px solid transparent;
     background: none;
 }
 
 .header__title {
-    font-size: 150px;
+    font-size: 10vw;
     background: none;
     color: white;
     font-family: 'Tiro Devanagari Marathi', serif;
@@ -330,7 +339,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* -------------------------------------------- [content] -------------------------------------------- */
 
 .content {
-    min-width: 90%;
+    min-width: 90vw;
     margin: auto;
     background: var(--content);
     padding: 20px;
@@ -407,6 +416,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     justify-content: space-around;
     border-bottom: dashed 1px white;
+    padding: 0px 10px;
 }
 
 .container__h3{
@@ -418,12 +428,13 @@ body::-webkit-scrollbar-thumb:hover {
     flex: 9;
     background: none;
     font-size: 20px;
+    padding: 5px 15px;
 }
 
 .price__number{
     flex: 1;
     font-size: 20px;
-    background: none
+    background: none;
 }
 
 
@@ -475,6 +486,7 @@ main{
     padding: 20px;
     margin-bottom: 1.2rem;
     margin-top: 1.2rem;
+    border-radius: 20px;
 }
 
 .footer div {
@@ -488,21 +500,6 @@ main{
     background: none;
 }
 
-.footer__content {
-    width: 85vw;
-    height: 200px;
-    margin: auto;
-    background: none;
-    background-color: #d13d1f8c;
-    position: relative;
-}
-
-.footer__content p {
-    position: absolute;
-    bottom: 0;
-    background: none;
-}
-
 #footer__left {
     background: url('../images/workWithUs.jpg');
     -webkit-background-size: cover;
@@ -513,6 +510,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 #footer__left a {
@@ -538,6 +536,11 @@ main{
 
 #footer__center {
     background: white;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    border-radius: 5px;
 }
 
 #footer__center iframe {
@@ -546,70 +549,44 @@ main{
     border-radius: 5px;
 }
 
-#footer__right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--content-container);
-    border-radius: 5px;
-}
-
-#footer__right .right__top {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font-size: 41px;
-}
-
-#footer__right .right__top a {
-    color: var(--fa-brands);
-}
-
-#footer__right .right__top a .fa-brands:hover {
-    background: none;
+#footer__center:hover{
+    border-top: 2px solid rgba(255, 255, 255, 0.726);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.726);
     filter: drop-shadow(1px 1px 3px #888);
 }
 
-#footer__right .right__top .fa-brands {
-    background: none;
-}
-
-#footer__right .right__bottom {
+#footer__rigth {
+    background: url('../images/developers.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
+}
+
+#footer__rigth a {
+    background: rgba(0, 0, 0, 0.39);
+    text-align: center;
     width: 100%;
-    height: 100%;
-}
-
-#footer__right .right__bottom:hover {
-    filter: drop-shadow(1px 1px 3px #888);
-}
-
-#footer__right .developerTeam a {
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-}
-
-#footer__right .right__bottom .fa-solid {
-    background: none;
-    font-size: 50px;
-}
-
-#footer__right .right__text {
+    cursor: pointer;
+    color: #fff;
     font-size: 30px;
-    color: white;
 }
 
-#footer__right .fa-solid .fa-laptop-code a {
-    color: var(--fa-brands);
+#footer__rigth a:hover {
+    border-top: 2px solid rgba(255, 255, 255, 0.726);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.726);
+    filter: drop-shadow(1px 1px 3px #888);
+}
+
+#footer__rigth:hover {
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.726);
+    filter: drop-shadow(1px 1px 3px #888);
 }
 
 /* -------------------------------------------- [curriculum] -------------------------------------------- */
@@ -621,4 +598,28 @@ main{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+/* -------------------------------------------- [responsive] -------------------------------------------- */
+
+@media screen and (max-width: 900px){
+    .header__title{
+        margin: 0;
+        justify-content: center;
+        font-size: 14vw;
+    }
+    .header__logo{
+        display: none !important;
+    }
+    .footer{
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .navbar__button{
+        width: 95px;
+        height: 45px;
+    }
 }
