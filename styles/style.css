@@ -190,8 +190,10 @@ body::-webkit-scrollbar-thumb:hover {
 /* -------------------------------------------- [navbar__titles] -------------------------------------------- */
 
 #navbar__home {
-    flex: 1;
+    flex: none;
     text-align: center;
+    background: none;
+    justify-content: center;
 }
 
 #navbar__home::before {
@@ -199,12 +201,17 @@ body::-webkit-scrollbar-thumb:hover {
     background: rgba(197, 197, 197, 0.349);
 }
 
-.navbar__title {
-    flex: 8;
+.navbar__title{
     display: flex;
+    flex: content;
     background: none;
     color: var(--button);
     justify-content: center;
+    align-items: center;
+}
+
+.title{
+    background: none;
 }
 /* -------------------------------------------- [header] -------------------------------------------- */
 
